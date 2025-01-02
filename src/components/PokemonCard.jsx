@@ -13,7 +13,7 @@ function PokemonCard({ pokemon }) {
     fetchPokemonDetails();
   }, [pokemon.url]);
 
-  if (!pokemonDetails) return <p className="text-center">Loading Pokémon details...</p>;
+  if (!pokemonDetails) return <p className="text-center"></p>;
 
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 ease-in-out">
